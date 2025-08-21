@@ -68,6 +68,78 @@
                 color: black;
 
             }
+
+            .pimg3 {
+
+                position: relative;
+
+                opacity: 0.7;
+
+                background-image: url("pain nagato.jpg");
+
+                background-position: center;
+
+                background-size: cover;
+
+                background-repeat: no-repeat;
+
+                background-attachment: fixed;
+
+                min-height: 400px;
+
+            }
+
+            .section {
+
+                text-align: center;
+
+                padding: 50px 80px;
+
+            }
+
+            .section-dark {
+
+                background-color: black;
+
+                color: antiquewhite;
+
+            }
+
+            .ptext {
+
+                position: absolute;
+
+                top: 50%;
+
+                width: 100%;
+
+                text-align: center;
+
+                color: black;
+
+                font-size: 27px;
+
+                letter-spacing: 8px;
+
+                text-transform: uppercase;
+
+            }
+
+            .ptext .border {
+
+                background-color: #111;
+
+                color: #fff;
+
+                padding: 20px;
+
+            }
+
+            .ptext .border .trans {
+
+                background-color: transparent;
+
+            }
         </style>
 
     </head>
@@ -86,47 +158,84 @@
 
         </div>
 
-<section>
+        <section>
 
-    <img class="mySlides" src="./itachi.jpg" alt="" style="height: 700px; width: 100%;">
+            <img class="mySlides" src="./Amv Thumbnail 41.jpg" alt="" style="height: 700px; width: 100%;">
 
-    <img class="mySlides" src="./madara.jpg" alt="" style="height: 700px; width: 100%;">
+            <img class="mySlides" src="./ChatGPT Image Aug 1, 2025, 08_24_29 PM.png" alt=""
+                style="height: 700px; width: 100%;">
 
-</section>
+        </section>
 
-<script>
+        <div class="pimg3">
 
-    var myIndex = 0
+            <div class="ptext">
 
-    carousel()
+                <span class="border trans">
 
-    function carousel() {   
+                    Image Two Text
 
-        var i;
+                </span>
 
-        var x = document.getElementsByClassName("mySlides")
+            </div>
 
-        for (i = 0; i < x.length; i++) {
+        </div>
 
-            x[i].style.display = "none";
+        <section class="section section-dark">
 
-        }
+            <h2>Section One</h2>
 
-        myIndex++
+            <p>Web development is the process of building and maintaining websites and web applications that function on
+                the
+                internet. It encompasses various tasks, including web design, web programming, and database management,
+                to
+                create interactive and functional online experiences.</p>
 
-        if (myIndex > x.length) { myIndex = 1 }
+        </section>
+<div> 
+    <img src="pizza.jpg" alt="">
+    <h2></h2>
+    <p>Pizza is one of the most loved foods in the world, originating from Naples, Italy, where the famous Margherita pizza was
+    created with tomato, mozzarella, and basil to represent the Italian flag. Over time, pizza has evolved into countless
+    varieties—from thin-crust Neapolitan and cheesy deep-dish Chicago style to spicy Indian versions topped with paneer or
+    tandoori chicken. What makes pizza special is its universal appeal: it’s customizable, perfect for sharing, and always
+    comforting. Whether enjoyed at a party, a family dinner, or a quick snack, pizza continues to be more than just
+    food—it’s a global symbol of joy and togetherness.</p>
+</div>
 
-        x[myIndex - 1].style.display = " block";
+        <script>
 
-        setTimeout(carousel, 3000);
+            var myIndex = 0
 
-    }
+            carousel()
 
-</script>
+            function carousel() {
+
+                var i;
+
+                var x = document.getElementsByClassName("mySlides")
+
+                for (i = 0; i < x.length; i++) {
+
+                    x[i].style.display = "none";
+
+                }
+
+                myIndex++
+
+                if (myIndex > x.length) { myIndex = 1 }
+
+                x[myIndex - 1].style.display = " block";
+
+                setTimeout(carousel, 3000);
+
+            }
+
+        </script>
 
     </body>
 
-    
+
 </body>
 
 </html>
